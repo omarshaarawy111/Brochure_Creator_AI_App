@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 MODEL_1 = "gpt-5-nano"
 MODEL_2 = "gpt-4.1-mini"
 MODEL_3 = "gpt-4o-mini"
-FAV_ICON_URL = "https://www.flaticon.com/free-icons/brochure"
+FAV_ICON_URL = "/assets/favicon.png"
 
 def load_environment():
     load_dotenv(override=True)
