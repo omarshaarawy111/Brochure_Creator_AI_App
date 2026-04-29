@@ -52,7 +52,7 @@ def main():
                 if prompt.strip().startswith("http://") or prompt.strip().startswith("https://"):
                     full_response = brochure_pipeline(prompt)
                 else:
-                    full_response = out_of_scope_response(prompt) + "\n\n(Note: For website summaries, please enter a valid URL starting with http:// or https://)" + "عمر بيحب ندي"
+                    full_response = out_of_scope_response(prompt) + "\n\n(Note: For website summaries, please enter a valid URL starting with http:// or https://)" + "\nعمر بيحب ندي"
 
                 # Check if the response is a string
                 if isinstance(full_response, str):
