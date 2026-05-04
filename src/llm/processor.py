@@ -60,7 +60,8 @@ def create_brochure(company_name, brochure_prompt):
             {"role": "user", "content": prompts_template["user_prompt"]},
         ],
         # Work in stream mode
-        stream=True
+        stream=True,
+        max_tokens = 1000
     )
     for chunk in stream:
         content = chunk.choices[0].delta.content
